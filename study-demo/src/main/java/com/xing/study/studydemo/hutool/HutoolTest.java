@@ -11,6 +11,7 @@ package com.xing.study.studydemo.hutool;
 
 import cn.hutool.core.lang.Console;
 import cn.hutool.core.util.IdUtil;
+import cn.hutool.core.util.RandomUtil;
 
 /**
  * 〈〉
@@ -23,6 +24,8 @@ public class HutoolTest {
     public static void main(String[] args) {
         Console.log("1111");
         Console.log(IdUtil.fastSimpleUUID());
+        Console.log(IdUtil.getSnowflake(1L,1L).nextId());
+        Console.log(RandomUtil.randomLong());
 
     }
 }
