@@ -9,9 +9,12 @@
  */
 package com.xing.study.studydemo.hutool;
 
+import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.lang.Console;
 import cn.hutool.core.util.IdUtil;
 import cn.hutool.core.util.RandomUtil;
+
+import java.util.Date;
 
 /**
  * 〈〉
@@ -26,6 +29,7 @@ public class HutoolTest {
         Console.log(IdUtil.fastSimpleUUID());
         Console.log(IdUtil.getSnowflake(1L,1L).nextId());
         Console.log(RandomUtil.randomLong());
+        Console.log(DateUtil.formatDateTime(new Date()));
 
     }
 }
