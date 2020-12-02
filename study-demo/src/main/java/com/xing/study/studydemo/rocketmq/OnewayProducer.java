@@ -17,6 +17,7 @@ import org.apache.rocketmq.remoting.common.RemotingHelper;
 
 /**
  * 〈〉
+ * 用于日志记录
  *
  * @author liujx16
  * @create 2020/9/21
