@@ -1,0 +1,15 @@
+# 应用名称
+spring:
+  application:
+    name: study-demo
+  resources:
+    static_locations: classpath:/static/
+  # 应用服务 WEB 访问端口
+server:
+  port: 8080
+  # spring 静态资源扫描路径
+rocketmq:
+  name-server: localhost:9876
+  producer:
+    group: my-group-name-A
+    send-message-timeout: 6000
